@@ -1,8 +1,8 @@
 let power_slider;
 let extent_slider;
 
-let w = 600;
-let h = 600;
+let w = 500;
+let h = 500;
 let max_iter = 100;
 let tolerance = 0.0000001;
 
@@ -10,7 +10,7 @@ let tolerance = 0.0000001;
 function display(){
     let p = power_slider.value();
     let extent = (2.5 - extent_slider.value()) ** 2;
-    console.log(extent)
+    // compute equation and derivative based on input
     let f = (z) => math.subtract(math.pow(z, p), 1) 
     let f_prime = (z) => math.multiply(p, math.pow(z, p - 1))
     document.getElementById("equation").innerHTML = 'z ^ ' + p + ' - 1';
