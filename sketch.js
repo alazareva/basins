@@ -1,8 +1,8 @@
 let power_slider;
 let extent_slider;
 
-let w = 500;
-let h = 500;
+let w = 400;
+let h = 400;
 let max_iter = 100;
 let tolerance = 0.0000001;
 
